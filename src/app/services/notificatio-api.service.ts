@@ -6,19 +6,7 @@ import {
 } from '@angular/fire/firestore';
 import { Observable, from } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-export interface Notification {
-  id: string,
-  firstName: string,
-  lastName: string,
-  avatar: string,
-  date: Date,
-  message: string,
-  type: string,
-  groupName: string,
-  postTitle: string,
-  unread: boolean,
-  postedImage: string
-}
+import { Notification } from '../models/notification.model'
 @Injectable({
   providedIn: 'root'
 })
